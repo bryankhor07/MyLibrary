@@ -1,0 +1,20 @@
+{
+  "name": "mylibrary",
+  "version": "1.0.0",
+  "description": "This is a full stack web application.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryankhor07/MyLibrary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryankhor07/MyLibrary/issues"
+  },
+  "homepage": "https://github.com/bryankhor07/MyLibrary#readme"
+}
