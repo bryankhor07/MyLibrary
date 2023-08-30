@@ -16,6 +16,13 @@ app.use(expressLayouts)
 // Files such as my stylesheets, JavaScript, and images are going to be in public
 app.use(express.static('public'))
 
+// Setting up the database connection
+const mongoose = require('mongoose')
+mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true})
+const db = mongoose.connection
+db.on('error', error => console.log(error))
+db.connect('open', () => console.log('Connected to Mongoose'))
+
 app.use('/', indexRouter)
 
 // I use 3000 as my port number
